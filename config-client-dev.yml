@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 8087
 
 eureka:
   client:
@@ -8,7 +8,7 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 1     #表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，
                                             #server端没有收到client的心跳，则将摘除该instance
-    lease-expiration-duration-in-seconds: 3 #表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，
+    lease-expiration-duration-in-seconds: 2 #表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，
                                             #在这个时间内若没收到下一次心跳，则将移除该instance
 
 spring:
